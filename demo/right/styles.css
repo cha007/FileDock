@@ -1,0 +1,28 @@
+:root {
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --fg: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.note {
+  padding: 20px;
+  margin: 12px;
+  background: var(--panel);
+  border-radius: var(--radius);
+}
+
+.note h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: var(--accent);
+}

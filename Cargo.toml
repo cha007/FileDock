@@ -1,0 +1,33 @@
+[package]
+name = "filedock"
+version = "1.2.0"
+description = "FileDock local editor, diff and file finder"
+authors = ["FileDock"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "time"] }
+encoding_rs = "0.8"
+sha1 = "0.10"
+flate2 = "1"
+regex = "1"
+natord = "1"
+rust-embed = "8"
+dirs = "6"
+getrandom = "0.2"
+percent-encoding = "2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

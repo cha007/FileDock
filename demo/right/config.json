@@ -1,0 +1,15 @@
+{
+  "port": 4100,
+  "dataDir": "notes",
+  "theme": "dark",
+  "features": {
+    "autosave": true,
+    "search": true,
+    "exportPdf": true,
+    "sync": true
+  },
+  "recentFiles": [
+    "notes/welcome.md"
+  ],
+  "autoSaveInterval": 2000
+}
